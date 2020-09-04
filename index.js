@@ -21,7 +21,7 @@ http.get(`https://music-zysec.glitch.me`);
 //CLIENT EVENTS
 client.on("ready", () => {
   console.log('Ready to play song | Saya Siap')
-  client.user.setActivity("$help | MUSIC ZYSEC")
+  client.user.setActivity("$help | MUSIC VORZY")
 })
 
 client.on("warn", info => console.log(info));
