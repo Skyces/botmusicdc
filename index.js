@@ -4,19 +4,8 @@ const { readdirSync } = require("fs");
 const { join } = require("path");
 const { TOKEN, PREFIX } = require("./config.json")
 
-//UPTIME ROBOT (WEB)
-const { get } = require("snekfetch");
-const http = require("http");
-const express = require("express");
-const app = express();
-app.get("/", (request, response) => {
-  console.log("Pinging");
-  response.sendStatus(200);
-})
-app.listen(process.env.PORT);
-setInterval(() => {
-http.get(`https://music-zysec.glitch.me`);
-}, 280000);
+
+
 
 //CLIENT EVENTS
 client.on("ready", () => {
